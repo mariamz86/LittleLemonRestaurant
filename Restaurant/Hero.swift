@@ -21,13 +21,13 @@ struct Hero: View {
                               .foregroundColor(.white)
                               .font(Font.custom("Markazi Text Medium", size: 32))
                               .frame(maxWidth: .infinity, alignment: .leading)
-                          Text("""
-                           
-                           We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
-                           """)
+                              .padding(-5)
+                          Text("We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.")
                           .foregroundColor(.white)
                           .frame(maxWidth: .infinity, alignment: .leading)
-                        
+                          .lineLimit(5)
+                          .font(Font.custom("Markazi Text Medium", size: 14))
+                          .padding(.top)
                       }
                       Image("Hero-image")
                           .resizable()

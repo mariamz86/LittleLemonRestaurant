@@ -12,27 +12,27 @@ struct Header: View {
     
     
     var body: some View {
-      
-        VStack{
-            ZStack {
-                Image("Logo")
-                HStack {
-                    Spacer()
-                    if isLoggedIn  {
-                        NavigationLink(destination: UserProfile()) {
-                            Image("ProfileImg")
-                                .resizable()
-                                .aspectRatio( contentMode: .fit)
-                                .frame(maxHeight: 50)
-                                .clipShape(Circle())
-                                .padding(.trailing)
-                        }
+     
+            VStack{
+                ZStack {
+                    Image("Logo")
+                    HStack {
+                        Spacer()
+                        if isLoggedIn  {
+                            NavigationLink(destination: UserProfile()) {
+                                Image("ProfileImg")
+                                    .resizable()
+                                    .aspectRatio( contentMode: .fit)
+                                    .frame(maxHeight: 50)
+                                    .clipShape(Circle())
+                                    .padding(.trailing)
+                            }
                             
+                        }
                     }
                 }
+                Spacer()
             }
-            Spacer()
-        }
         
         
         

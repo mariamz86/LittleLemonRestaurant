@@ -58,7 +58,7 @@ struct Menu: View {
             VStack(spacing:0){
                 Hero() .padding()
                     .background(Color(#colorLiteral(red: 0.2862745225, green: 0.3686274588, blue: 0.3411764801, alpha: 1)))
-                    .frame(maxWidth: .infinity, maxHeight: 340)
+                    .frame(maxWidth: .infinity, maxHeight: 360)
                 HStack{
                     Image(systemName: "magnifyingglass")
                     TextField("Search Text", text: $searchText)

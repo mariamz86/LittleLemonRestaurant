@@ -83,13 +83,14 @@ struct Onboarding: View {
                 }.alert("Missing information", isPresented: $emptyFields) {
                     Button("OK", role: .cancel) { }
                 }
-                
+                .font(.headline)
                 .frame(maxWidth: .infinity)
-                .foregroundColor(Color.white)
+                .contentShape(Rectangle())
+                .foregroundColor(Color.black)
                 .padding(10)
-                .background(Color(#colorLiteral(red: 0.2862745225, green: 0.3686274588, blue: 0.3411764801, alpha: 1)))
+                .background(Color.yellow)
                 .cornerRadius(8)
-                .padding(.horizontal)
+                .padding()
                 
             }
         }//end scrollview
@@ -101,7 +102,7 @@ struct Onboarding: View {
         }.navigationBarBackButtonHidden(true)
             .navigationBarHidden(true)
         
-        Spacer()
+        //Spacer()
             
     }
       
